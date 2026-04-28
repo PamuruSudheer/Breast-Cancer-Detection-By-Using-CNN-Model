@@ -20,7 +20,7 @@ import pickle   # for saving training history.
 import seaborn as sns #  Seaborn is used to create beautiful and easy statistical graphs.
 
 # Configuration
-DATASET_PATH = r"C:\Users\sudhe\OneDrive\Desktop\main_project\cancerdetection\Dataset_BUSI_with_GT"
+DATASET_PATH = r"Enter your own dataset path"
 MODEL_DIR = "model"
 IMAGE_SIZE = 64  # Increased for better feature extraction
 
