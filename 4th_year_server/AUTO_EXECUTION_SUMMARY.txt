@@ -1,0 +1,54 @@
+AUTOMATIC EXECUTION SUMMARY
+============================
+
+When you run: python app.py
+
+The following happens AUTOMATICALLY:
+1. Flask application starts
+2. Trained model loads from model/cnn_model.keras  
+3. Server starts on http://localhost:5000
+4. Web interface becomes available
+
+Files that AUTO-RUN:
+===================
+✓ app.py                    - Main server
+✓ model/cnn_model.keras     - CNN model
+✓ templates/index.html      - Web interface (when visited)
+✓ static/css/style.css      - Styling (when visited)
+✓ static/js/script.js       - Script (when visited)
+
+Files that DO NOT auto-run:
+===========================
+✗ train_model.py            - Train manually: python train_model.py
+✗ generate_graphs.py        - View graphs manually: python generate_graphs.py
+✗ display_metrics.py        - Show metrics manually: python display_metrics.py
+✗ check_results.py          - Check results manually: python check_results.py
+✗ 4th_year.ipynb            - Jupyter notebook (open in Jupyter)
+
+HOW TO CONTROL:
+===============
+
+START SERVER (auto-run):
+    $ python app.py
+    Then visit: http://localhost:5000
+
+STOP SERVER (stop auto-run):
+    Press Ctrl + C in terminal
+
+DISABLE AUTO-LOADING:
+    Edit app.py and comment out:
+    # if load_trained_model():
+    #     app.run(...)
+
+TRAIN MODEL (separate, no auto-run):
+    $ python train_model.py
+
+VIEW TRAINING GRAPHS (separate, no auto-run):
+    $ python generate_graphs.py
+
+SUMMARY:
+========
+- app.py INTENTIONALLY auto-loads the model and starts the server
+- This is NORMAL and EXPECTED behavior
+- All auto-execution is necessary for the server to function
+- To prevent it, press Ctrl+C to stop the server
