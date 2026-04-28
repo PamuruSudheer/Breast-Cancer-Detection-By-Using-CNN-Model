@@ -20,7 +20,7 @@ import pickle
 import seaborn as sns
 
 # Configuration
-DATASET_PATH = r"C:\Users\sudhe\OneDrive\Desktop\main_project\cancerdetection\Dataset_BUSI_with_GT"
+DATASET_PATH = r"Enter your own dataset path here.."
 MODEL_DIR = "model"
 IMAGE_SIZE = 32
 
